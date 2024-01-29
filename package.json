@@ -1,0 +1,33 @@
+{
+  "name": "dexaviz",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build",
+    "extract": "lingui extract --clean",
+    "compile": "lingui compile"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.22.15",
+    "@lingui/react": "^4.4.2",
+    "babel-loader": "^9.1.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@lingui/cli": "^4.4.2",
+    "@lingui/macro": "^4.4.2",
+    "@rspack/cli": "^0.5.2",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "babel-plugin-macros": "^3.1.0",
+    "prettier": "^3.2.4"
+  },
+  "babel": {
+    "plugins": [
+      "macros"
+    ]
+  }
+}
